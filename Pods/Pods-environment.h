@@ -54,6 +54,12 @@
 #define COCOAPODS_VERSION_MINOR_Bully 2
 #define COCOAPODS_VERSION_PATCH_Bully 2
 
+// PixateFreestyle
+#define COCOAPODS_POD_AVAILABLE_PixateFreestyle
+#define COCOAPODS_VERSION_MAJOR_PixateFreestyle 2
+#define COCOAPODS_VERSION_MINOR_PixateFreestyle 1
+#define COCOAPODS_VERSION_PATCH_PixateFreestyle 1
+
 // ProgressHUD
 #define COCOAPODS_POD_AVAILABLE_ProgressHUD
 #define COCOAPODS_VERSION_MAJOR_ProgressHUD 1

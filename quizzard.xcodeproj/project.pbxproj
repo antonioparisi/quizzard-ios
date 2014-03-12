@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5A68E85C18CD2EAD00E12572 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A68E85B18CD2EAD00E12572 /* FacebookSDK.framework */; };
 		5A68E85F18CD2F2A00E12572 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68E85E18CD2F2A00E12572 /* LoginViewController.m */; };
-		5A68E86118CD36BF00E12572 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A68E86018CD36BF00E12572 /* PixateFreestyle.framework */; };
 		5A68E86318CD389300E12572 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 5A68E86218CD389300E12572 /* default.css */; };
 		5A68E86618CD3B0900E12572 /* WaitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68E86518CD3B0900E12572 /* WaitViewController.m */; };
 		5A68E86818CD452F00E12572 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A68E86718CD452F00E12572 /* QuartzCore.framework */; };
@@ -78,7 +77,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A68E86818CD452F00E12572 /* QuartzCore.framework in Frameworks */,
-				5A68E86118CD36BF00E12572 /* PixateFreestyle.framework in Frameworks */,
 				5A68E85C18CD2EAD00E12572 /* FacebookSDK.framework in Frameworks */,
 				5A93FB3D18CCCBB60018EE0A /* CoreGraphics.framework in Frameworks */,
 				5A93FB3F18CCCBB60018EE0A /* UIKit.framework in Frameworks */,
