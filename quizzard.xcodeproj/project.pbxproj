@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A68E85C18CD2EAD00E12572 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A68E85B18CD2EAD00E12572 /* FacebookSDK.framework */; };
+		5A68E85F18CD2F2A00E12572 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68E85E18CD2F2A00E12572 /* LoginViewController.m */; };
+		5A68E86118CD36BF00E12572 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A68E86018CD36BF00E12572 /* PixateFreestyle.framework */; };
+		5A68E86318CD389300E12572 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 5A68E86218CD389300E12572 /* default.css */; };
+		5A68E86618CD3B0900E12572 /* WaitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68E86518CD3B0900E12572 /* WaitViewController.m */; };
+		5A68E86818CD452F00E12572 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A68E86718CD452F00E12572 /* QuartzCore.framework */; };
+		5A68E86B18CFC5F500E12572 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68E86A18CFC5F500E12572 /* QuizViewController.m */; };
+		5A93FB3B18CCCBB60018EE0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A93FB3A18CCCBB60018EE0A /* Foundation.framework */; };
+		5A93FB3D18CCCBB60018EE0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A93FB3C18CCCBB60018EE0A /* CoreGraphics.framework */; };
+		5A93FB3F18CCCBB60018EE0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A93FB3E18CCCBB60018EE0A /* UIKit.framework */; };
+		5A93FB4518CCCBB60018EE0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A93FB4318CCCBB60018EE0A /* InfoPlist.strings */; };
+		5A93FB4718CCCBB60018EE0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93FB4618CCCBB60018EE0A /* main.m */; };
+		5A93FB4B18CCCBB60018EE0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93FB4A18CCCBB60018EE0A /* AppDelegate.m */; };
+		5A93FB4E18CCCBB60018EE0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A93FB4C18CCCBB60018EE0A /* Main.storyboard */; };
+		5A93FB5618CCCBB60018EE0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A93FB5518CCCBB60018EE0A /* Images.xcassets */; };
+		5A93FB5D18CCCBB70018EE0A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A93FB5C18CCCBB70018EE0A /* XCTest.framework */; };
+		5A93FB5E18CCCBB70018EE0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A93FB3A18CCCBB60018EE0A /* Foundation.framework */; };
+		5A93FB5F18CCCBB70018EE0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A93FB3E18CCCBB60018EE0A /* UIKit.framework */; };
+		5A93FB6718CCCBB70018EE0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A93FB6518CCCBB70018EE0A /* InfoPlist.strings */; };
+		5A93FB6918CCCBB70018EE0A /* quizzardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93FB6818CCCBB70018EE0A /* quizzardTests.m */; };
+		633CA562CC3344D9AD618BF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CCCED70B154239B2828303 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A93FB6018CCCBB70018EE0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A93FB2F18CCCBB60018EE0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A93FB3618CCCBB60018EE0A;
+			remoteInfo = quizzard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23CCCED70B154239B2828303 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A68E85B18CD2EAD00E12572 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		5A68E85D18CD2F2A00E12572 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		5A68E85E18CD2F2A00E12572 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		5A68E86018CD36BF00E12572 /* PixateFreestyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PixateFreestyle.framework; path = ../../PixateFreestyle/PixateFreestyle.framework; sourceTree = "<group>"; };
+		5A68E86218CD389300E12572 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
+		5A68E86418CD3B0900E12572 /* WaitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitViewController.h; sourceTree = "<group>"; };
+		5A68E86518CD3B0900E12572 /* WaitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitViewController.m; sourceTree = "<group>"; };
+		5A68E86718CD452F00E12572 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5A68E86918CFC5F400E12572 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizViewController.h; path = ../QuizViewController.h; sourceTree = "<group>"; };
+		5A68E86A18CFC5F500E12572 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuizViewController.m; path = ../QuizViewController.m; sourceTree = "<group>"; };
+		5A93FB3718CCCBB60018EE0A /* quizzard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizzard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A93FB3A18CCCBB60018EE0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A93FB3C18CCCBB60018EE0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5A93FB3E18CCCBB60018EE0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A93FB4218CCCBB60018EE0A /* quizzard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quizzard-Info.plist"; sourceTree = "<group>"; };
+		5A93FB4418CCCBB60018EE0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A93FB4618CCCBB60018EE0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A93FB4818CCCBB60018EE0A /* quizzard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quizzard-Prefix.pch"; sourceTree = "<group>"; };
+		5A93FB4918CCCBB60018EE0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A93FB4A18CCCBB60018EE0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A93FB4D18CCCBB60018EE0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A93FB5518CCCBB60018EE0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5A93FB5B18CCCBB70018EE0A /* quizzardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quizzardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A93FB5C18CCCBB70018EE0A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5A93FB6418CCCBB70018EE0A /* quizzardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quizzardTests-Info.plist"; sourceTree = "<group>"; };
+		5A93FB6618CCCBB70018EE0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A93FB6818CCCBB70018EE0A /* quizzardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quizzardTests.m; sourceTree = "<group>"; };
+		9725B75276754009ADF9B1A6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A93FB3418CCCBB60018EE0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A68E86818CD452F00E12572 /* QuartzCore.framework in Frameworks */,
+				5A68E86118CD36BF00E12572 /* PixateFreestyle.framework in Frameworks */,
+				5A68E85C18CD2EAD00E12572 /* FacebookSDK.framework in Frameworks */,
+				5A93FB3D18CCCBB60018EE0A /* CoreGraphics.framework in Frameworks */,
+				5A93FB3F18CCCBB60018EE0A /* UIKit.framework in Frameworks */,
+				5A93FB3B18CCCBB60018EE0A /* Foundation.framework in Frameworks */,
+				633CA562CC3344D9AD618BF2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A93FB5818CCCBB70018EE0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A93FB5D18CCCBB70018EE0A /* XCTest.framework in Frameworks */,
+				5A93FB5F18CCCBB70018EE0A /* UIKit.framework in Frameworks */,
+				5A93FB5E18CCCBB70018EE0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A93FB2E18CCCBB60018EE0A = {
+			isa = PBXGroup;
+			children = (
+				5A93FB4018CCCBB60018EE0A /* quizzard */,
+				5A93FB6218CCCBB70018EE0A /* quizzardTests */,
+				5A93FB3918CCCBB60018EE0A /* Frameworks */,
+				5A93FB3818CCCBB60018EE0A /* Products */,
+				9725B75276754009ADF9B1A6 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		5A93FB3818CCCBB60018EE0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A93FB3718CCCBB60018EE0A /* quizzard.app */,
+				5A93FB5B18CCCBB70018EE0A /* quizzardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A93FB3918CCCBB60018EE0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A68E86718CD452F00E12572 /* QuartzCore.framework */,
+				5A68E86018CD36BF00E12572 /* PixateFreestyle.framework */,
+				5A68E85B18CD2EAD00E12572 /* FacebookSDK.framework */,
+				5A93FB3A18CCCBB60018EE0A /* Foundation.framework */,
+				5A93FB3C18CCCBB60018EE0A /* CoreGraphics.framework */,
+				5A93FB3E18CCCBB60018EE0A /* UIKit.framework */,
+				5A93FB5C18CCCBB70018EE0A /* XCTest.framework */,
+				23CCCED70B154239B2828303 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A93FB4018CCCBB60018EE0A /* quizzard */ = {
+			isa = PBXGroup;
+			children = (
+				5A68E86918CFC5F400E12572 /* QuizViewController.h */,
+				5A68E86A18CFC5F500E12572 /* QuizViewController.m */,
+				5A68E85D18CD2F2A00E12572 /* LoginViewController.h */,
+				5A68E85E18CD2F2A00E12572 /* LoginViewController.m */,
+				5A93FB4918CCCBB60018EE0A /* AppDelegate.h */,
+				5A93FB4A18CCCBB60018EE0A /* AppDelegate.m */,
+				5A93FB4C18CCCBB60018EE0A /* Main.storyboard */,
+				5A93FB5518CCCBB60018EE0A /* Images.xcassets */,
+				5A93FB4118CCCBB60018EE0A /* Supporting Files */,
+				5A68E86218CD389300E12572 /* default.css */,
+				5A68E86418CD3B0900E12572 /* WaitViewController.h */,
+				5A68E86518CD3B0900E12572 /* WaitViewController.m */,
+			);
+			path = quizzard;
+			sourceTree = "<group>";
+		};
+		5A93FB4118CCCBB60018EE0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A93FB4218CCCBB60018EE0A /* quizzard-Info.plist */,
+				5A93FB4318CCCBB60018EE0A /* InfoPlist.strings */,
+				5A93FB4618CCCBB60018EE0A /* main.m */,
+				5A93FB4818CCCBB60018EE0A /* quizzard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A93FB6218CCCBB70018EE0A /* quizzardTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A93FB6818CCCBB70018EE0A /* quizzardTests.m */,
+				5A93FB6318CCCBB70018EE0A /* Supporting Files */,
+			);
+			path = quizzardTests;
+			sourceTree = "<group>";
+		};
+		5A93FB6318CCCBB70018EE0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A93FB6418CCCBB70018EE0A /* quizzardTests-Info.plist */,
+				5A93FB6518CCCBB70018EE0A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A93FB3618CCCBB60018EE0A /* quizzard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A93FB6C18CCCBB70018EE0A /* Build configuration list for PBXNativeTarget "quizzard" */;
+			buildPhases = (
+				31DC69169B7345CF9ABFC119 /* Check Pods Manifest.lock */,
+				5A93FB3318CCCBB60018EE0A /* Sources */,
+				5A93FB3418CCCBB60018EE0A /* Frameworks */,
+				5A93FB3518CCCBB60018EE0A /* Resources */,
+				C1548E4B45C541E18E5C0D65 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = quizzard;
+			productName = quizzard;
+			productReference = 5A93FB3718CCCBB60018EE0A /* quizzard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A93FB5A18CCCBB70018EE0A /* quizzardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A93FB6F18CCCBB70018EE0A /* Build configuration list for PBXNativeTarget "quizzardTests" */;
+			buildPhases = (
+				5A93FB5718CCCBB70018EE0A /* Sources */,
+				5A93FB5818CCCBB70018EE0A /* Frameworks */,
+				5A93FB5918CCCBB70018EE0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A93FB6118CCCBB70018EE0A /* PBXTargetDependency */,
+			);
+			name = quizzardTests;
+			productName = quizzardTests;
+			productReference = 5A93FB5B18CCCBB70018EE0A /* quizzardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A93FB2F18CCCBB60018EE0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = gamaroff;
+				TargetAttributes = {
+					5A93FB5A18CCCBB70018EE0A = {
+						TestTargetID = 5A93FB3618CCCBB60018EE0A;
+					};
+				};
+			};
+			buildConfigurationList = 5A93FB3218CCCBB60018EE0A /* Build configuration list for PBXProject "quizzard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A93FB2E18CCCBB60018EE0A;
+			productRefGroup = 5A93FB3818CCCBB60018EE0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A93FB3618CCCBB60018EE0A /* quizzard */,
+				5A93FB5A18CCCBB70018EE0A /* quizzardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A93FB3518CCCBB60018EE0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A93FB5618CCCBB60018EE0A /* Images.xcassets in Resources */,
+				5A93FB4518CCCBB60018EE0A /* InfoPlist.strings in Resources */,
+				5A93FB4E18CCCBB60018EE0A /* Main.storyboard in Resources */,
+				5A68E86318CD389300E12572 /* default.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A93FB5918CCCBB70018EE0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A93FB6718CCCBB70018EE0A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31DC69169B7345CF9ABFC119 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1548E4B45C541E18E5C0D65 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A93FB3318CCCBB60018EE0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A93FB4B18CCCBB60018EE0A /* AppDelegate.m in Sources */,
+				5A68E86B18CFC5F500E12572 /* QuizViewController.m in Sources */,
+				5A93FB4718CCCBB60018EE0A /* main.m in Sources */,
+				5A68E85F18CD2F2A00E12572 /* LoginViewController.m in Sources */,
+				5A68E86618CD3B0900E12572 /* WaitViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A93FB5718CCCBB70018EE0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A93FB6918CCCBB70018EE0A /* quizzardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A93FB6118CCCBB70018EE0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A93FB3618CCCBB60018EE0A /* quizzard */;
+			targetProxy = 5A93FB6018CCCBB70018EE0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A93FB4318CCCBB60018EE0A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A93FB4418CCCBB60018EE0A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5A93FB4C18CCCBB60018EE0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A93FB4D18CCCBB60018EE0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A93FB6518CCCBB70018EE0A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A93FB6618CCCBB70018EE0A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A93FB6A18CCCBB70018EE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A93FB6B18CCCBB70018EE0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A93FB6D18CCCBB70018EE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9725B75276754009ADF9B1A6 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/antonioparisi/Documents/FacebookSDK,
+					/Users/antonioparisi/Documents/PixateFreestyle,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "quizzard/quizzard-Prefix.pch";
+				INFOPLIST_FILE = "quizzard/quizzard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5A93FB6E18CCCBB70018EE0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9725B75276754009ADF9B1A6 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/antonioparisi/Documents/FacebookSDK,
+					/Users/antonioparisi/Documents/PixateFreestyle,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "quizzard/quizzard-Prefix.pch";
+				INFOPLIST_FILE = "quizzard/quizzard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5A93FB7018CCCBB70018EE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quizzard.app/quizzard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "quizzard/quizzard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "quizzardTests/quizzardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5A93FB7118CCCBB70018EE0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quizzard.app/quizzard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "quizzard/quizzard-Prefix.pch";
+				INFOPLIST_FILE = "quizzardTests/quizzardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A93FB3218CCCBB60018EE0A /* Build configuration list for PBXProject "quizzard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A93FB6A18CCCBB70018EE0A /* Debug */,
+				5A93FB6B18CCCBB70018EE0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A93FB6C18CCCBB70018EE0A /* Build configuration list for PBXNativeTarget "quizzard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A93FB6D18CCCBB70018EE0A /* Debug */,
+				5A93FB6E18CCCBB70018EE0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A93FB6F18CCCBB70018EE0A /* Build configuration list for PBXNativeTarget "quizzardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A93FB7018CCCBB70018EE0A /* Debug */,
+				5A93FB7118CCCBB70018EE0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A93FB2F18CCCBB60018EE0A /* Project object */;
+}

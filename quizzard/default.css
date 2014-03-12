@@ -1,0 +1,17 @@
+.loading-circle {
+    width: 30px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 13px;
+    background: transparent;
+    text-align: center;
+}
+
+.loading-circle-red {
+    width: 30px;
+    height: 30px;
+    border: 3px solid red;
+    border-radius: 13px;
+    background: #b64743;
+    text-align: center;
+}
