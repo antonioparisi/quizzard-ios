@@ -21,6 +21,7 @@ PODS:
   - Bully (0.2.2):
     - Reachability
     - SocketRocket
+  - MBProgressHUD (0.8)
   - PixateFreestyle (2.1.1)
   - ProgressHUD (1.1)
   - Reachability (3.1.1)
@@ -29,12 +30,14 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - Bully (~> 0.2.0)
+  - MBProgressHUD (~> 0.8)
   - PixateFreestyle
-  - ProgressHUD (~> 1.1)
+  - ProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: e8cfd8f3fe3bfe19124a0cc63f4d45752d892a56
   Bully: 55ca0bb8d86ef5cf3f32dd6b3b51b15477bbf4b3
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   PixateFreestyle: dfbdaa46093921079db0de04642ab1ea9ec31db1
   ProgressHUD: 9b41c9416b3ba4f9c5661afe9efa7938198ba810
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735

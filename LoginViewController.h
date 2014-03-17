@@ -10,6 +10,9 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import <AFNetworking/AFNetworking.h>
 
+#import "Constants.h"
+#import "QuizzardClient.h"
+
 @interface LoginViewController : UIViewController<FBLoginViewDelegate>
 @property (strong, nonatomic) IBOutlet FBProfilePictureView *profilePictureView;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;

@@ -42,63 +42,68 @@
 // This method will be called when the user information has been fetched
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
                             user:(id<FBGraphUser>)user {
-    NSLog(@"register");
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
+    [prefs setValue:[user objectForKey:@"email"] forKey:@"email"];
     [prefs setValue:user.first_name forKey:@"firstName"];
     [prefs setValue:user.last_name forKey:@"lastName"];
     [prefs setValue:user.id forKey:@"pictureId"];
-    
+    [prefs setValue:[[[FBSession activeSession] accessTokenData] accessToken] forKey:@"accessToken"];
+
     [prefs synchronize];
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    
     NSDictionary *parameters = @{
+                                 @"email": [prefs valueForKey:@"email"],
                                  @"name": [prefs valueForKey:@"firstName"],
                                  @"lastname": [prefs valueForKey:@"lastName"],
-                                 @"picture": [prefs valueForKey:@"pictureId"]
+                                 @"picture": [prefs valueForKey:@"pictureId"],
+                                 @"access_token": [prefs valueForKey:@"accessToken"]
                                  };
     
-    [manager POST:@"http://quizzard-api.herokuapp.com/user" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    [[QuizzardClient sharedClient] POST:@"/users" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        [self performSegueWithIdentifier:@"wait_host" sender:self];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
+
 }
 
 // Logged-in user experience
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
-    
-    [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection,
-                                                           id<FBGraphUser> fbUserData,
-                                                           NSError *error)
-     {
-        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-        [prefs setValue:[fbUserData objectForKey:@"email"] forKey:@"email"];
-        [prefs setValue:[fbUserData objectForKey:@"first_name"] forKey:@"firstName"];
-        [prefs setValue:[fbUserData objectForKey:@"last_name"] forKey:@"lastName"];
-        [prefs setValue:[fbUserData objectForKey:@"id"] forKey:@"pictureId"];
-        [prefs setValue:[[[FBSession activeSession] accessTokenData] accessToken] forKey:@"accessToken"];
-        [prefs synchronize];
-         
-        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    [self performSegueWithIdentifier:@"wait_host" sender:self];
 
-        NSDictionary *parameters = @{
-             @"email": [prefs valueForKey:@"email"],
-             @"name": [prefs valueForKey:@"firstName"],
-             @"lastname": [prefs valueForKey:@"lastName"],
-             @"picture": [prefs valueForKey:@"pictureId"],
-             @"access_token": [[[FBSession activeSession] accessTokenData] accessToken]
-        };
-
-        [manager POST:@"http://quizzard-api.herokuapp.com/users" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            NSLog(@"JSON: %@", responseObject);
-            
-            [self performSegueWithIdentifier:@"wait_host" sender:self];
-        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            NSLog(@"Error: %@", error);
-        }];
-        
-    }];
+//    [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection,
+//                                                           id<FBGraphUser> fbUserData,
+//                                                           NSError *error)
+//     {
+//         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+//         if (![prefs valueForKey:@"accessToken"]) {
+//            [prefs setValue:[fbUserData objectForKey:@"email"] forKey:@"email"];
+//            [prefs setValue:[fbUserData objectForKey:@"first_name"] forKey:@"firstName"];
+//            [prefs setValue:[fbUserData objectForKey:@"last_name"] forKey:@"lastName"];
+//            [prefs setValue:[fbUserData objectForKey:@"id"] forKey:@"pictureId"];
+//            [prefs setValue:[[[FBSession activeSession] accessTokenData] accessToken] forKey:@"accessToken"];
+//            [prefs synchronize];
+//             
+//            AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//
+//            NSDictionary *parameters = @{
+//                 @"email": [prefs valueForKey:@"email"],
+//                 @"name": [prefs valueForKey:@"firstName"],
+//                 @"lastname": [prefs valueForKey:@"lastName"],
+//                 @"picture": [prefs valueForKey:@"pictureId"],
+//                 @"access_token": [[[FBSession activeSession] accessTokenData] accessToken]
+//            };
+//
+//            [manager POST:[NSString stringWithFormat:@"%@/users", kAPI_URL] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//                [self performSegueWithIdentifier:@"wait_host" sender:self];
+//            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//                NSLog(@"Error: %@", error);
+//            }];
+//         }else {
+//             [self performSegueWithIdentifier:@"wait_host" sender:self];
+//         }
+//    }];
 }
 
 // Logged-out user experience

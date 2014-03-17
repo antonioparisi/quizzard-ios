@@ -58,7 +58,6 @@
 #pragma Wrap facebook profile image into an UIImageView
 
 - (void)getUserImageFromFBView{
-    
     UIImage *img = nil;
     
     for (NSObject *obj in [self.profilePictureView subviews]) {
@@ -69,9 +68,22 @@
         }
     }
     
+    CGSize viewSize = self.view.bounds.size;
+    
+    self.profileImage.alpha = 0;
     self.profileImage.image = img;
     [self setRoundedView:self.profileImage toDiameter:100.0];
     
+    [self.profileImage setFrame:(CGRectMake((viewSize.width / 2) - 50, (self.view.bounds.size.height / 2) - 150, self.profileImage.bounds.size.width, self.profileImage.bounds.size.height))];
+    
+    [UIView animateWithDuration:0.5
+                          delay:1.0
+                        options:UIViewAnimationOptionCurveEaseIn
+                     animations:^{ self.profileImage.alpha = 1; }
+                     completion:^(BOOL finished){
+                        
+                     }
+     ];
 }
 
 - (void)setRoundedView:(UIView *)roundedView toDiameter:(float)newSize;
@@ -102,14 +114,9 @@
 {
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    [manager.requestSerializer setValue:[prefs valueForKey:@"accessToken"] forHTTPHeaderField:@"X_QUIZZARD_TOKEN"];
+    [[[QuizzardClient sharedClient] requestSerializer] setValue:[prefs valueForKey:@"accessToken"] forHTTPHeaderField:@"X_QUIZZARD_TOKEN"];
     
-    [manager GET:@"http://quizzard-api.herokuapp.com/users/join" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    [[QuizzardClient sharedClient] POST:@"/users/join" parameters:nil success:nil failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
 }
@@ -129,7 +136,6 @@
         NSMutableArray *questions = [[NSMutableArray alloc] init];
         for (NSDictionary *question in dictQuestions)
         {
-            NSLog(@"question: %@", question);
             [questions addObject:question];
         }
         
@@ -137,7 +143,6 @@
         [ProgressHUD show:@"Quiz is starting, get ready!"];
         
         [self performSelector:@selector(startQuiz:) withObject:questions];
-        
     }];
 }
 

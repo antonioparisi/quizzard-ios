@@ -16,6 +16,10 @@
 #import "AppDelegate.h"
 #import "QuizViewController.h"
 
+#import "Constants.h"
+#import "QuizzardClient.h"
+#import "UIActivityIndicatorView+AFNetworking.h"
+
 @interface WaitViewController : UIViewController<FBLoginViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
 @property (weak, nonatomic) IBOutlet UIView *loadingCircle;

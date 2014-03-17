@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "02D59B812174421DBF5ED327"
+               BlueprintIdentifier = "31FE9B9BC6914C7DB2839629"
                BuildableName = "libPods-ProgressHUD.a"
                BlueprintName = "Pods-ProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">

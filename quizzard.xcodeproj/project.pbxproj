@@ -13,6 +13,7 @@
 		5A68E86618CD3B0900E12572 /* WaitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68E86518CD3B0900E12572 /* WaitViewController.m */; };
 		5A68E86818CD452F00E12572 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A68E86718CD452F00E12572 /* QuartzCore.framework */; };
 		5A68E86B18CFC5F500E12572 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68E86A18CFC5F500E12572 /* QuizViewController.m */; };
+		5A6C96FA18D4F51C00CBC804 /* QuizzardClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C96F918D4F51C00CBC804 /* QuizzardClient.m */; };
 		5A93FB3B18CCCBB60018EE0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A93FB3A18CCCBB60018EE0A /* Foundation.framework */; };
 		5A93FB3D18CCCBB60018EE0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A93FB3C18CCCBB60018EE0A /* CoreGraphics.framework */; };
 		5A93FB3F18CCCBB60018EE0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A93FB3E18CCCBB60018EE0A /* UIKit.framework */; };
@@ -26,6 +27,9 @@
 		5A93FB5F18CCCBB70018EE0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A93FB3E18CCCBB60018EE0A /* UIKit.framework */; };
 		5A93FB6718CCCBB70018EE0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A93FB6518CCCBB70018EE0A /* InfoPlist.strings */; };
 		5A93FB6918CCCBB70018EE0A /* quizzardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93FB6818CCCBB70018EE0A /* quizzardTests.m */; };
+		5A9FB2BD18D61D1A006EB813 /* CircleCounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FB2BA18D61D1A006EB813 /* CircleCounterView.m */; };
+		5A9FB2BE18D61D1A006EB813 /* CircleDownCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FB2BC18D61D1A006EB813 /* CircleDownCounter.m */; };
+		5A9FB2C118D68983006EB813 /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FB2C018D68983006EB813 /* RankViewController.m */; };
 		633CA562CC3344D9AD618BF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CCCED70B154239B2828303 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +55,9 @@
 		5A68E86718CD452F00E12572 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5A68E86918CFC5F400E12572 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizViewController.h; path = ../QuizViewController.h; sourceTree = "<group>"; };
 		5A68E86A18CFC5F500E12572 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuizViewController.m; path = ../QuizViewController.m; sourceTree = "<group>"; };
+		5A6C96F718D35A8700CBC804 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
+		5A6C96F818D4F51C00CBC804 /* QuizzardClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizzardClient.h; sourceTree = "<group>"; };
+		5A6C96F918D4F51C00CBC804 /* QuizzardClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizzardClient.m; sourceTree = "<group>"; };
 		5A93FB3718CCCBB60018EE0A /* quizzard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizzard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A93FB3A18CCCBB60018EE0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A93FB3C18CCCBB60018EE0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,6 +75,12 @@
 		5A93FB6418CCCBB70018EE0A /* quizzardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quizzardTests-Info.plist"; sourceTree = "<group>"; };
 		5A93FB6618CCCBB70018EE0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A93FB6818CCCBB70018EE0A /* quizzardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quizzardTests.m; sourceTree = "<group>"; };
+		5A9FB2B918D61D1A006EB813 /* CircleCounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleCounterView.h; sourceTree = "<group>"; };
+		5A9FB2BA18D61D1A006EB813 /* CircleCounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleCounterView.m; sourceTree = "<group>"; };
+		5A9FB2BB18D61D1A006EB813 /* CircleDownCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleDownCounter.h; sourceTree = "<group>"; };
+		5A9FB2BC18D61D1A006EB813 /* CircleDownCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleDownCounter.m; sourceTree = "<group>"; };
+		5A9FB2BF18D68983006EB813 /* RankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RankViewController.h; path = ../RankViewController.h; sourceTree = "<group>"; };
+		5A9FB2C018D68983006EB813 /* RankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankViewController.m; path = ../RankViewController.m; sourceTree = "<group>"; };
 		9725B75276754009ADF9B1A6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +114,7 @@
 		5A93FB2E18CCCBB60018EE0A = {
 			isa = PBXGroup;
 			children = (
+				5AA948AA18D5FD1F0075FFE3 /* Vendor */,
 				5A93FB4018CCCBB60018EE0A /* quizzard */,
 				5A93FB6218CCCBB70018EE0A /* quizzardTests */,
 				5A93FB3918CCCBB60018EE0A /* Frameworks */,
@@ -136,6 +150,9 @@
 		5A93FB4018CCCBB60018EE0A /* quizzard */ = {
 			isa = PBXGroup;
 			children = (
+				5A9FB2BF18D68983006EB813 /* RankViewController.h */,
+				5A9FB2C018D68983006EB813 /* RankViewController.m */,
+				5A6C96F718D35A8700CBC804 /* Constants.h */,
 				5A68E86918CFC5F400E12572 /* QuizViewController.h */,
 				5A68E86A18CFC5F500E12572 /* QuizViewController.m */,
 				5A68E85D18CD2F2A00E12572 /* LoginViewController.h */,
@@ -148,6 +165,8 @@
 				5A68E86218CD389300E12572 /* default.css */,
 				5A68E86418CD3B0900E12572 /* WaitViewController.h */,
 				5A68E86518CD3B0900E12572 /* WaitViewController.m */,
+				5A6C96F818D4F51C00CBC804 /* QuizzardClient.h */,
+				5A6C96F918D4F51C00CBC804 /* QuizzardClient.m */,
 			);
 			path = quizzard;
 			sourceTree = "<group>";
@@ -179,6 +198,25 @@
 				5A93FB6518CCCBB70018EE0A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A9FB2B818D61D1A006EB813 /* CircleCountDown */ = {
+			isa = PBXGroup;
+			children = (
+				5A9FB2B918D61D1A006EB813 /* CircleCounterView.h */,
+				5A9FB2BA18D61D1A006EB813 /* CircleCounterView.m */,
+				5A9FB2BB18D61D1A006EB813 /* CircleDownCounter.h */,
+				5A9FB2BC18D61D1A006EB813 /* CircleDownCounter.m */,
+			);
+			path = CircleCountDown;
+			sourceTree = "<group>";
+		};
+		5AA948AA18D5FD1F0075FFE3 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5A9FB2B818D61D1A006EB813 /* CircleCountDown */,
+			);
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,9 +354,13 @@
 			files = (
 				5A93FB4B18CCCBB60018EE0A /* AppDelegate.m in Sources */,
 				5A68E86B18CFC5F500E12572 /* QuizViewController.m in Sources */,
+				5A6C96FA18D4F51C00CBC804 /* QuizzardClient.m in Sources */,
+				5A9FB2BD18D61D1A006EB813 /* CircleCounterView.m in Sources */,
 				5A93FB4718CCCBB60018EE0A /* main.m in Sources */,
 				5A68E85F18CD2F2A00E12572 /* LoginViewController.m in Sources */,
+				5A9FB2BE18D61D1A006EB813 /* CircleDownCounter.m in Sources */,
 				5A68E86618CD3B0900E12572 /* WaitViewController.m in Sources */,
+				5A9FB2C118D68983006EB813 /* RankViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
